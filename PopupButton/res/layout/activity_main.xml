@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:popupbtn="http://schemas.android.com/apk/res/com.example.popupbutton"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.popupbutton.MainActivity" >
+
+    <com.example.popupbutton.PopupButton 
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义弹出按钮"
+        android:textSize="20sp"
+        popupbtn:normalBg="@drawable/tab_bkg_line"
+        popupbtn:normalIcon="@drawable/arrow_down_shop"
+        popupbtn:pressBg="@drawable/tab_bkg_selected"
+        popupbtn:pressIcon="@drawable/arrow_up_shop"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
